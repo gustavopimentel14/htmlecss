@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+header{
+    font-weight: 600;
+    
+    width: 300px;
+    margin: 5px;
+
+}
+h1{
+    background-color: rgba(255, 0, 0, 0.411);
+    font-weight: 600;
+    margin: 0px;
+    text-align: center;
+}
+nav{
+    background-color: rgba(255, 0, 0, 0.685);
+    text-align: center;
+}
+a{
+    color: black;
+    padding: 5px;
+    
+}
+#seçao1>p{
+    
+    margin: 5px;
+    width: 300px;
+    text-align: center;
+}
+#seçao2{
+    
+    width: 300px;
+    margin: 5px;   
+}
+h2{
+   text-align: justify;
+   font-size: 20px;
+}
+article>p{
+    text-align: justify;
+    font-size: 18px;
+    
+}
+aside{
+    background-color: black;
+    color: white;
+    margin: 0px 0px 0px 170px;
+    text-align: right;
+    font-size: 13px;
+}
+footer{
+    background-color: rgba(46, 37, 37, 0.418);
+    width: 300px;
+    margin: 5px;
+    height: 30px;
+    padding: 5px 0px 0px 0px
+}
+.rodape{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin: 0px;
+
+}
