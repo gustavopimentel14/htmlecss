@@ -7,11 +7,17 @@
     <style>
         body{
             height: 100vh;
-            background-color: #5676A0;
-            background-image: url(imagens-cap19/wallpaper002.jpg);
-            background-position: center top;
-            background-repeat: no-repeat;
+            background: black url(imagens-cap19/wallpaper002.jpg) center center no-repeat fixed;
             background-size: cover;
+
+            /* shorthand background
+                color > image > position > repeat > [size] > attachment
+
+                [o size não está funcionando com o shorthand, mas segundo a W3C esta é a posição dele no shorthand]
+
+                background: black url(imagens-cap19/wallpaper002.jpg) center center no-repeat fixed
+            */
+        
         }
         main{
             background-color: wheat;
@@ -26,7 +32,7 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet possimus, deleniti assumenda sint blanditiis error necessitatibus nesciunt distinctio totam temporibus corrupti cupiditate dolorum! Deserunt nisi odit dignissimos libero quasi voluptate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio animi molestias tenetur eum necessitatibus odit perspiciatis cumque enim fugit commodi officiis, soluta, facere assumenda doloribus rerum, accusantium dolore aspernatur? Impedit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore hic praesentium dolore ab corrupti, deserunt ullam rerum debitis. Distinctio voluptate enim a vero! Blanditiis enim numquam quas, voluptas aliquid consectetur.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet possimus, deleniti assumenda sint blanditiis error necessitatibus nesciunt distinctio totam temporibus corrupti cupiditate dolorum! Deserunt nisi odit dignissimos libero quasi voluptate. <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio animi molestias tenetur eum necessitatibus odit perspiciatis cumque enim fugit commodi officiis, soluta, facere assumenda doloribus rerum, accusantium dolore aspernatur? </p>Impedit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore hic praesentium dolore ab corrupti, deserunt ullam rerum debitis. Distinctio voluptate enim a vero! Blanditiis enim numquam quas, voluptas aliquid consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam distinctio ipsum saepe enim, impedit minus architecto esse unde dolore eos sint temporibus vitae excepturi optio! Fugiat sint facilis dicta consequuntur? <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, eligendi, tempora ipsam omnis quasi excepturi dicta iste placeat veritatis in maxime! Quod atque consectetur earum omnis officiis quis quo in. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora quod esse dolorem laboriosam totam voluptate illum maxime quo excepturi adipisci sapiente facere, eius corrupti debitis aliquam sit beatae, optio eum! <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nam molestias dignissimos voluptatem aspernatur. Minus voluptatem fugiat nemo. Tempore incidunt tempora nam dolor ratione omnis vero alias temporibus, dolorum recusandae! </p><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, veritatis aliquid velit eius voluptatibus molestiae aperiam ex. Animi minima id rerum sequi pariatur corrupti ad temporibus ratione, et, ex itaque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi blanditiis corporis tempore porro pariatur, ipsum placeat autem impedit cum similique voluptatum nemo at iste. Labore molestiae quis corporis modi porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum autem quaerat at veritatis tempora exercitationem, a consectetur atque minima ex repellendus consequuntur culpa deleniti odio! Nisi laudantium ratione necessitatibus pariatur.</p>
         
     </main>
 </body>
