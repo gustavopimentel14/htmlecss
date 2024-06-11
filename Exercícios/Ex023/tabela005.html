@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela do Brasileirão</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            position: relative;
+        }
+        tbody>tr:nth-child(2n){
+            background-color: lightgray;
+        }
+        tbody tr:hover{
+            background-color: gray;
+        }
+        thead th{
+            background-color: lightgray;
+        }
+        th{
+            text-align: left;
+            padding: 10px 10px;
+        }
+        td{
+            padding: 0px 100px 0px 0px;
+        }
+        div{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <table>
+            <colgroup>
+                <col id="clube">
+                <col class="pontos">
+                <col class="partidas">
+                <col class="vitorias">
+                <col class="empates">
+                <col class="derrotas">
+                <col class="golsmarcados">
+                <col class="golssofridos">
+                <col class="saldo">
+            </colgroup>
+            <caption>Campeonato Brasileiro</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Clube</th>
+                    <th><abbr title="Pontos">PTS</abbr></th>
+                    <th><abbr title="Partidas Jogadas">PJ</abbr></th>
+                    <th><abbr title="Vitórias">VIT</abbr></th>
+                    <th><abbr title="Empates">E</abbr></th>
+                    <th><abbr title="Derrotas">DER</abbr></th>
+                    <th><abbr title="Gols Marcados">GM</abbr></th>
+                    <th><abbr title="Gols Sofridos">GS</abbr></th>
+                    <th><abbr title="Saldo de Gols">SG</abbr></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1°</th>
+                    <th>Flamengo</th>
+                    <td>14</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>13</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <th>2°</th>
+                    <th>Bahia</th>
+                    <td>14</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>10</td>
+                    <td>7</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>3°</th>
+                    <th>Botafogo</th>
+                    <td>13</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>13</td>
+                    <td>7</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th>4°</th>
+                    <th>São Paulo</th>
+                    <td>13</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>12</td>
+                    <td>6</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th>5°</th>
+                    <th>Athletico</th>
+                    <td>13</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>9</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th>6°</th>
+                    <th>Bragantino</th>
+                    <td>12</td>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>9</td>
+                    <td>6</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>7°</th>
+                    <th>Palmeiras</th>
+                    <td>11</td>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>8°</th>
+                    <th>Internacional</th>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>9°</th>
+                    <th>Cruzeiro</th>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>-1</td>
+                </tr>
+                <tr>
+                    <th>10°</th>
+                    <th>Atlético-MG</th>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>10</td>
+                    <td>4</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th>11°</th>
+                    <th>Fortaleza</th>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>12°</th>
+                    <th>Juventude</th>
+                    <td>9</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>-1</td>
+                </tr>
+                <tr>
+                    <th>13°</th>
+                    <th>Grêmio</th>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>-1</td>
+                </tr>
+                <tr>
+                    <th>14°</th>
+                    <th>Vasco</th>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>17</td>
+                    <td>-10</td>
+                </tr>
+                <tr>
+                    <th>15°</th>
+                    <th>Fluminense</th>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>13</td>
+                    <td>-4</td>
+                </tr>
+                <tr>
+                    <th>16°</th>
+                    <th>Criciúma</th>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>17°</th>
+                    <th>Corinthians</th>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>-3</td>
+                </tr>
+                <tr>
+                    <th>18°</th>
+                    <th>Atlético-GO</th>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>9</td>
+                    <td>-5</td>
+                </tr>
+                <tr>
+                    <th>19°</th>
+                    <th>Cuiabá</th>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>13</td>
+                    <td>-8</td>
+                </tr>
+                <tr>
+                    <th>20°</th>
+                    <th>Vitória</th>
+                    <td>2</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>13</td>
+                    <td>-8</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem esse, dolores nihil accusamus natus sint harum quas? A ad voluptate libero, praesentium molestias ipsa, suscipit maiores est alias, quos adipisci.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit consectetur itaque omnis consequuntur dolorum reiciendis! Animi, amet! Neque voluptates voluptatibus fugiat quibusdam, veniam non accusamus distinctio minima nihil impedit soluta?</p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis magnam ab quasi modi officia, tempora cum deserunt repellat cumque recusandae debitis in distinctio labore, reiciendis doloremque nesciunt nulla. Modi, deleniti. <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut praesentium obcaecati, qui aperiam tenetur libero architecto vel vero cum. Voluptates tenetur modi facilis pariatur alias unde vitae dolorum beatae possimus.</p>
+</body>
+</html>
