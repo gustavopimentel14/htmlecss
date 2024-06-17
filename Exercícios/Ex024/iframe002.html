@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        iframe{
+            border: 1px solid black;
+            width: 95vw;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus laborum accusantium, vitae eligendi molestiae fugit rem ratione amet consectetur hic cupiditate dolores distinctio dignissimos, repellendus at in officia fugiat numquam!</p>
+    <ul>
+        <li>
+            <a href="paginas-extras/pagina001.html" target="frame">Primeira página</a>
+        </li>
+        <li>
+            <a href="paginas-extras/pagina002.html" target="frame">Segunda página</a>
+        </li>
+        <li>
+            <a href="paginas-extras/pagina003.html" target="frame">Terceira página</a>
+        </li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam nihil non exercitationem soluta adipisci quod error ducimus, corporis facilis, eligendi dolor quidem libero, totam dicta. Ipsa doloremque provident nihil excepturi?</p>
+    <iframe name="frame" srcdoc="<h1>Escolhas uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam nihil non exercitationem soluta adipisci quod error ducimus, corporis facilis, eligendi dolor quidem libero, totam dicta. Ipsa doloremque provident nihil excepturi?</p><img src='dreams.jpg'>"></iframe>
+    
+</body>
+</html>
