@@ -6,32 +6,78 @@
     <title>Formulário</title>
 </head>
 <body>
-    <h1>Teste de Formulário</h1>
-    <form action="cadastro.php" method="get">
-        <p>
-            <label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
-        </p>
-        <p>
-            <label for="imedia">Média</label>
-            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required>
-        </p>
-        <p>
-            <label for="imes">Período Letivo</label>
-            <input type="month" name="mes" id="imes">
-        </p>
-        <p>
-            <label for="idia">Data da prova</label>
-            <input type="date" name="dia" id="idia">
-        </p>
-        <p>
-            <label for="ihora">Hora da prova</label>
-            <input type="time" name="hora" id="ihora">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">   
-            <input type="reset" value="Limpar">
-        </p>
-    </form>
+    <main style="max-width: 800px; margin: auto;  font-family: Arial, Helvetica, sans-serif;">
+        <h1 style="text-align: center;">Teste de Formulário</h1>
+        <form action="cadastro.php" method="get">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" maxlength="30" placeholder="Nome completo" autocomplete="name">
+                </p>
+                <div>
+                    <label for="iemail">E-mail:</label>
+                    <input type="email" name="email" id="iemail" autocomplete="email">
+                </div>
+                <br>
+                <div>
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" id="itelefone" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Dados da Prova</legend>
+                <p>
+                    <label for="imedia">Média</label>
+                    <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1">
+                </p>
+                <p>
+                    <label for="imes">Período Letivo</label>
+                    <input type="month" name="mes" id="imes">
+                </p>
+                <p>
+                    <label for="idia">Data da prova:</label>
+                    <input type="date" name="dia" id="idia">
+                </p>
+                <p>
+                    <label for="ihora">Hora da prova:</label>
+                    <input type="time" name="hora" id="ihora">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Esportes Favoritos</legend>
+                <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label> <br>
+                <input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquete</label> <br>
+                <input type="checkbox" name="ten" id="iten"> <label for="iten">Tênis</label> <br>
+                <input type="checkbox" name="futam" id="ifutam"> <label for="ifutam">Futebol Americano</label> <br>
+                <input type="checkbox" name="vol" id="ivol"> <label for="ivol">Vôlei</label> <br>
+                <input type="checkbox" name="futvol" id="ifutvol"> <label for="ifutvol">Futvôlei</label> <br>
+            </fieldset>
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="imas"> <label for="imas">Masculino</label>
+                <input type="radio" name="sexo" id="ifem"><label for="ifem">Feminino</label>
+            </fieldset>
+            <br>
+            <div>
+                <label for="icor">Cor: </label>
+                <input type="color" name="cor" id="icor" value="#ff0000">
+            </div>
+            <br>
+            <div>
+                <label for="inivel">Nível de Satisfação: </label>
+                <input type="range" name="nivel" id="inivel" min="0" max="5">
+            </div>
+            <br>
+            <div>
+                <label for="ifoto">Foto de Perfil:</label>
+                <input type="file" name="foto" id="ifoto">
+            </div>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </main>
 </body>
 </html>
