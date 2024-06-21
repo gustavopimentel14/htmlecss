@@ -8,7 +8,7 @@
 <body>
     <main style="max-width: 800px; margin: auto;  font-family: Arial, Helvetica, sans-serif;">
         <h1 style="text-align: center;">Teste de Formulário</h1>
-        <form action="cadastro.php" method="get">
+        <form action="cadastro.php" method="post">
             <fieldset>
                 <legend>Dados Pessoais</legend>
                 <p>
@@ -74,10 +74,65 @@
                 <input type="file" name="foto" id="ifoto">
             </div>
             <p>
+                <label for="iestado">Estado: </label>
+                <select name="estado" id="iestado">
+                    <option value=""selected>--- Escolha ---</option>
+                    <optgroup label="Nordeste">
+                        <option value="PB">Paraíba</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="listaprof">
+                <datalist id="listaprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="PROG">Progamador</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="imsg">Mensagem:</label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <label for="in1">Número 1: </label>
+                <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="in2">Número 2: </label>
+                <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="isoma">Soma:</label>
+                <output name="soma" id="isoma">0</output>
+            </p>
+            <p>
+                <label for="inum">Numero: </label>
+                <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="val.innerHTML = Number(inum.value)">
+                <output id="val">5</output>
+            </p>
+            <p>
+                <label for="iano">Ano de nascimento: </label>
+                <input type="number" name="ano" id="iano" min="1900" max="2024" oninput="calcIdade()">
+            </p>
+            <p>
+                <label for="idade">Idade: </label>
+                <output id="idade">0</output>
+            </p>
+            <p>
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
             </p>
         </form>
+        <script>
+            function calcIdade() {
+                let atual = new Date().getFullYear()
+                idade.innerHTML = atual - iano.value
+            }
+        </script>
     </main>
 </body>
 </html>
