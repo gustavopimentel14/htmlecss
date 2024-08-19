@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .conteiner{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+        }
+        #um{
+            flex-shrink: 1; 
+            flex-grow: 1;
+        }
+        #dois{
+            flex-shrink: 2;
+            flex-grow: 2;
+        }
+        #tres{
+            flex-grow: 4;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div id="um" class="item">A</div>
+        <div id="dois" class="item">B</div>
+        <div id="tres" class="item">C</div>
+    </div>
+</body>
+</html>
