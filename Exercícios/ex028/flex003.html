@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox menu</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #cabeça{
+            display: flex;
+            background-color: black;
+            color: white;
+            justify-content: space-between;
+            padding: 10px;
+            align-items: center;
+            border-radius: 5px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        #menu{
+            display: flex;
+            gap: 30px;
+        }
+        #contato{
+            background-color: blue;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="cabeça">
+        <div id="logo">LOGO</div>
+        <div id="menu"><a href="#">Suporte</a><a href="#">Notícias</a><a href="#">Saiba Mais</a></div>
+        <div id="contato">Contato</div>
+    </div>
+</body>
+</html>
