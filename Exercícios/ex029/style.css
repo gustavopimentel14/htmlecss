@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgray;
+}
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: row wrap;
+    height: 50px;
+    padding: 10px;
+}
+#menu{
+    display: flex;
+    flex-basis: 500px;
+    justify-content: space-evenly;
+    gap: 18px;
+    flex: row nowrap;
+}
+#menu a{
+    color: white;
+    text-decoration: none;
+}
+section{
+    width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: justify;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px 1px rgba(0, 0, 0, 0.144);
+}
