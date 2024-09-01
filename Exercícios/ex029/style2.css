@@ -18,9 +18,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-flow: row wrap;
-    height: 70px;
+    flex-flow: column wrap;
     padding: 10px;
+    text-align: center;
+    gap: 5px;
 }
 #logo{
     font-weight: bolder;
@@ -29,17 +30,21 @@ header{
 #menu{
     display: flex;
     justify-content: space-evenly;
-    gap: 18px;
-    flex-flow: row nowrap;
+    flex-flow: column;
 }
 #menu a{
     color: white;
     text-decoration: none;
     flex-shrink: 1;
-    flex-grow: 1;
+    flex-grow: 1;padding: 10px;
+}
+a:hover{
+    background-color: rgb(83, 83, 83);
+    border-radius: 10px;
+    transition: .8s;
 }
 section{
-    max-width: 800px;
+    max-width: 400px;
     margin: auto;
     margin-top: 20px;
     text-align: justify;
