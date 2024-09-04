@@ -10,6 +10,7 @@
 }
 body{
     background-color: lightgray;
+    font-family: 'Roboto';
 }
 header{
     font-family: 'SUSE';
@@ -52,7 +53,6 @@ section{
     padding: 10px;
     border-radius: 10px;
     box-shadow: 5px 10px 10px 1px rgba(0, 0, 0, 0.144);
-    font-family: 'Roboto';
     line-height: 1.5em;
 }
 section h1{
@@ -61,4 +61,20 @@ section h1{
 }
 section p{
     text-indent: 20px;
+}
+fieldset{
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 10px;
+    max-width: 400px;
+    height: 200px
+}
+input{
+    width: 300px;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
 }
