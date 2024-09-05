@@ -62,19 +62,3 @@ section h1{
 section p{
     text-indent: 20px;
 }
-fieldset{
-    margin: auto;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-left: 10px;
-    max-width: 400px;
-    height: 200px
-}
-input{
-    width: 300px;
-    height: 25px;
-    border: none;
-    border-radius: 10px;
-}
